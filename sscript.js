@@ -16,7 +16,7 @@ function loadSearch(){
           spc = lcase.value.toLowerCase();
           term = spc.split(' ').join('_');
           xmlDoc = xml.responseXML;
-          txt = "search results for" + lcase;
+          txt = "";
           x = xmlDoc.getElementsByTagName(term);
           for (i = 0; i < x.length; i++) { 
           txt += "<div class=post ocVdi8u>"+"<div class=topic ISdcf3h>"+x[i].getElementsByTagName("topic")[0].childNodes[0].nodeValue +"</div>"+"<div class=def Nbj6Jkli>" +
