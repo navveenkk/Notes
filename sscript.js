@@ -19,7 +19,7 @@ function loadSearch(){
           txt = "";
           x = xmlDoc.getElementsByTagName(term);
           for (i = 0; i < x.length; i++) { 
-          txt += "<div class=post ocVdi8u>"+"<div class=topic ISdcf3h>"+x[i].getElementsByTagName("topic")[0].childNodes[0].nodeValue +"</div>"+"<div class=def Nbj6Jkli>" +
+          txt += "<div class=ocVdi8u>"+"<div class=ISdcf3h>"+x[i].getElementsByTagName("topic")[0].childNodes[0].nodeValue +"</div>"+"<div class=Nbj6Jkli>" +
           x[i].getElementsByTagName("definition")[0].childNodes[0].nodeValue + "</div>" + "<div class=tags Ooyh3vIb>" + x[i].getElementsByTagName("hashtags")[0].childNodes[0].nodeValue + "</div>" + "</div>";
           }
           document.getElementById("notes").innerHTML = txt;
