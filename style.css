@@ -13,9 +13,13 @@
 
 .Ooyh3vIb{font-size: 12px; font-weight: bold; color:dodgerblue; background-color:whitesmoke; padding:0px 2px 0px 2px;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border:none; position:sticky;}
 
-    button {border-radius: 5px; border:none; cursor: pointer; background-color:transparent; color: black; padding: 5px; width:inherit;}
-    img{width:auto; height:auto;}
-    origin{font-size: 9px; padding: 5px;}
+button {border-radius: 5px; border:none; cursor: pointer; background-color:transparent; color: black; padding: 5px; width:inherit;}
+ 
+button:focus{outline:0;}
+
+img{width:auto; height:auto;}
+
+origin{font-size: 9px; padding: 5px;}
 
 
 @keyframes animatebottom { 
