@@ -1,23 +1,45 @@
-<html lang="en" onload="" style="scroll-behavior: smooth;"><head><title>Notes</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="en" onload="fnIp()" style="scroll-behavior:smooth;"><head><title>Zeboo</title><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><script src="script.js" defer></script><script src="sscript.js" defer></script><link rel="stylesheet" href="style.css"></head>
-<body style=" font-family: 'Merriweather', serif; display:block; word-spacing: 2px;" onload="">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"></head>
+<body style=" font-family: 'Merriweather', serif; word-spacing: 2px; overflow-x: hidden;" onload="coverRead()">
+
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
 
 
-<section style="width:100%; display: flex; flex-direction: row; height:inherit;">
-<div style="font-size: 20px; vertical-align: middle; font-weight: bolder; letter-spacing: 2px; width: inherit;">Notes</div>
+
+<div id="side-container" class="si-co-hi">
+
+<div id="search-box" style=" display: flex; flex-wrap: wrap; "></div>
+<div id="search-term"></div>
+</div>
     
-<div class="search-form Zvb8Iopu">
-    
-<input class="Qj90rTs" type="text" id="input" style="" placeholder="Search Here..." autofocus="" autocomplete="off" maxlength="15" onkeyup="validateField()" required>
-<button id="b1" style="font-weight: bolder; visibility: hidden;" onclick="loadSearch()"><i class="fa fa-search" style="font-size: 15px; outline:none;"></i></button>
+
+<section id="navigation-box" style="display:flex; flex-direction: row; height:inherit; background-color: white; justify-content: space-between;">
+<div id="logo-name" style="font-size: 30px; vertical-align: middle; font-weight: bolder; letter-spacing: 2px; text-align: center;"><i class="fa fa-sticky-note" style="font-size: 30px; color:red;"></i>&nbsp;Notes.</div>
+<div class="search-form Zvb8Iopu" id="search" style="align-self: center;">
+<input class="Qj90rTs" type="text" id="input" style="" placeholder="Search Here..." autofocus="" autocomplete="off" maxlength="15" onkeyup="validateField()" onblur="SearchTerms()" required>
+<button type="submit" id="b1" style="font-weight: bolder; visibility:;" onclick="loadSearch()"><i class="fa fa-search" style="font-size: 15px;"></i></button>
     </div>
+
+</section>    
     
-</section>
+<div class="cover" id="cover-box" style="margin-top: 30px;">
+  <div class="" style="font-size: 20px; font-weight: bolder;"> Cover <span style="color:Red; text-decoration:;">Reads.</span></div>
+  <div class="notes-box" id="story-box" style="display: grid; grid-row-gap: 10px; padding-top: 0px; padding-bottom:20px;"></div>
+</div>
 
-<div class="notes-box" id="notes">
+<div class="notes-box" id="notes-container" onchange="clnNode()">
 
+</div>
 
-    
-    </div>
+ 
+ <div class="sec-stories navigation1" id="sec2" style="margin-left:38%; display:none;">
+<div class="heading" style="font-size: 20px; font-weight: bolder; color:black; background-color:white; padding:5px; border-radius: 5px; ">Related <span style="color:Red; text-decoration:;">Reads.</span>
+</div>
+ </div> 
+<div id="recent"></div>
+      
 </body></html>
