@@ -38,15 +38,14 @@ function myFunction(xml) {
           for (i = 0; i < x.length; i++) { 
           txtc +=  "<img src="+  x[i].getElementsByTagName("pics")[0].childNodes[0].nodeValue+ ">";
           }
+
           document.getElementById("notes-container").innerHTML = txt + txta + txtb;
+          document.getElementById("notes-container").style.display = "";
           document.getElementById("search-term").innerHTML = txt;
-          document.getElementById("sec2").style.display="block";
-          document.body.scrollTo(0,500); // For Safari
-  document.documentElement.scrollTo(0,500);
+
           
           
          
 
 
 }
-
