@@ -6,7 +6,7 @@ xhttp.onreadystatechange = function() {
         myFunction(this);
     }
 };
-xhttp.open("GET", "data.xml", true);
+xhttp.open("GET", "https://github.com/navveenkk/NoteBook/blob/79895c6b5a2e2eb5ed609c453fb972a7e7fa164f/data.xml", true);
 xhttp.send();
 }
 
